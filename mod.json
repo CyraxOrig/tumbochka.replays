@@ -1,0 +1,86 @@
+{
+  "id": "tubaretka.replays",
+  "name": "TubaretKa Replays",
+  "version": "2.0.0",
+  "developer": "TubaretKa",
+  "description": "TAS-bot for Geometry Dash 2.2 with auto clicker, macro recording, render and Viper 8K sounds.",
+  "geode": ">=2.0.0",
+  "platform": "all",
+  "resources": {
+    "sounds.zip": "sounds.zip",
+    "checkbox_off.png": "checkbox_off.png",
+    "checkbox_on.png": "checkbox_on.png",
+    "PopupWindow.png": "PopupWindow.png"
+  },
+  "dependencies": [
+    {
+      "id": "geode.node-ids",
+      "version": ">=v1.10.0",
+      "importance": "required"
+    },
+    {
+      "id": "eclipse.ffmpeg-api",
+      "version": ">=2.0.0",
+      "importance": "required"
+    }
+  ],
+  "settings": {
+    "bot_enabled": {
+      "type": "bool",
+      "default": true,
+      "description": "Enable/disable the bot"
+    },
+    "auto_clicker": {
+      "type": "bool",
+      "default": false,
+      "description": "Enable auto clicker"
+    },
+    "clicks_per_frame": {
+      "type": "int",
+      "default": 1,
+      "min": 1,
+      "max": 100000,
+      "description": "How many clicks per frame"
+    },
+    "straightfly_ship": {
+      "type": "bool",
+      "default": false,
+      "description": "Straight fly for Ship mode"
+    },
+    "straightfly_ufo": {
+      "type": "bool",
+      "default": false,
+      "description": "Straight fly for UFO mode"
+    },
+    "green_orb": {
+      "type": "bool",
+      "default": false,
+      "description": "Auto-click for green dash orbs (1 click)"
+    },
+    "purple_orb": {
+      "type": "bool",
+      "default": false,
+      "description": "Auto-click for purple dash orbs (2 clicks/frame)"
+    },
+    "sound_feedback": {
+      "type": "bool",
+      "default": true,
+      "description": "Enable click sounds (Viper 8K)"
+    },
+    "fps_bypass": {
+      "type": "bool",
+      "default": false,
+      "description": "Enable FPS bypass"
+    },
+    "render_mode": {
+      "type": "bool",
+      "default": false,
+      "description": "Enable render mode"
+    },
+    "hotkey": {
+      "type": "keybind",
+      "default": "Tab",
+      "description": "Open bot menu (PC)"
+    }
+  }
+}
